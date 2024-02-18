@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap');
+
+/* Define o estilo padrão para o corpo da página */
+body {
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(338deg, #c4f0f0 35%, #7fe1e1 35%, #7fe1e1 65%, #c4f0f0 65%);
+}
+
+/* Estilos para a calculadora */
+.calculadora {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+/* Estilos para o cabeçalho da calculadora */
+.calculadora h1 {
+    margin-bottom: 20px;
+}
+
+/* Estilos para os campos de entrada de checkbox */
+input[type="checkbox"] {
+    margin-bottom: 20px;
+}
+
+/* Estilos para os campos de entrada de número */
+input[type="number"] {
+    width: 220px;
+    /* Largura menor */
+    padding: 5px;
+    margin-bottom: 1px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: normal;
+    /* Peso normal da fonte */
+}
+
+/* Quando o usuário coloca uma nota, aumenta o peso da fonte */
+input[type="number"]:focus {
+    font-weight: bold;
+}
+
+/* Estilos para mensagens de erro */
+.message-error {
+    color: red;
+    font-size: 12px;
+    margin-top: 1px;
+    /* Define uma margem superior padrão */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilos para os botões */
+button {
+    width: 100px;
+    padding: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Estilos para o botão Calcular */
+button:nth-of-type(1) {
+    background-color: blue;
+    color: white;
+}
+
+/* Estilos para o botão Limpar */
+button:nth-of-type(2) {
+    background-color: red;
+    color: white;
+}
+
+/* Estilos para o segundo botão */
+button:nth-of-type(2) {
+    margin-left: 10px;
+}
+
+/* Estilos para o resultado */
+#resultado {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.footer-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 15px;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    cursor: default;
+}
+
+/* Definindo os estilos de fundo com base na situação da média */
+.aprovado {
+    background: linear-gradient(338deg, #b6f7c1 35%, #79e879 35%, #79e879 65%, #b6f7c1 65%);
+}
+
+
+.reprovado {
+    background: linear-gradient(338deg, #ffcccc 35%, #ff6666 35%, #ff6666 65%, #ffcccc 65%);
+}
+
+.prova-final {
+    background: linear-gradient(338deg, #ffffcc 35%, #ffff66 35%, #ffff66 65%, #ffffcc 65%);
+}

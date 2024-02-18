@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Média</title>
+    <link rel="shortcut icon" href="./midias/Favicon-Calculadora.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <main class="calculadora">
+            <h1>Calculadora de Média</h1>
+            <input type="checkbox" id="p1p2" onclick="handleCheckbox('p1p2')"> Fez a P1 e P2<br>
+            <input type="checkbox" id="apenasUma" onclick="handleCheckbox('apenasUma')"> Fez apenas uma prova<br>
+
+            <div id="p1p2Inputs" style="display:none;">
+                <input type="number" id="notaP1" placeholder="Insira a nota da P1" min="0.0" max="10.0" step="0.1"
+                    onchange="verificarNota(this)">
+                <span id="notaP1Message" class="message-error"></span><br>
+                <input type="number" id="notaP2" placeholder="Insira a nota da P2" min="0.0" max="10.0" step="0.1"
+                    onchange="verificarNota(this)">
+                <span id="notaP2Message" class="message-error"></span><br>
+            </div>
+
+            <div id="apenasUmaInput" style="display:none;">
+                <input type="number" id="notaProva" placeholder="Insira a nota da prova realizada" min="0.0" max="10.0"
+                    step="0.1" onchange="verificarNota(this)">
+                <span id="notaProvaMessage" class="message-error"></span><br>
+            </div>
+
+            <button onclick="calcularMedia()">Calcular</button>
+            <button onclick="limparInputs()">Limpar</button>
+
+            <div id="resultado"></div>
+
+            <div class="footer-text">
+                <a href="https://pedrocorrea.netlify.app/" target="_blank" rel="noopener noreferrer">Site Pedro
+                    Corrêa.</a>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
