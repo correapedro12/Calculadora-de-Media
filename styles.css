@@ -11,6 +11,7 @@ body {
     align-items: center;
     min-height: 100vh;
     background: linear-gradient(338deg, #c4f0f0 35%, #7fe1e1 35%, #7fe1e1 65%, #c4f0f0 65%);
+    height: 100vh;
 }
 
 /* Estilos para a calculadora */
@@ -97,19 +98,59 @@ button:nth-of-type(2) {
     font-weight: bold;
 }
 
+.footer {
+    text-align: center;
+    display: inline-block;
+    /* Exibe os elementos na mesma linha */
+    vertical-align: middle;
+    /* Alinha os elementos verticalmente */
+    margin: 0 10px;
+    /* Adiciona margem entre os elementos, se desejar */
+}
+
+.footer-text,
+.btn-social {
+    display: inline-block;
+    /* Exibe os elementos na mesma linha */
+    vertical-align: middle;
+    /* Alinha os elementos verticalmente */
+    margin: 0 5px;
+    /* Adiciona margem entre os elementos, se desejar */
+}
+
 .footer-text {
     position: absolute;
     bottom: 10px;
     left: 10px;
     font-size: 15px;
-    color: black;
 }
 
 a {
     text-decoration: none;
     color: black;
     font-weight: 400;
-    cursor: default;
+    cursor: pointer;
+    border-bottom: 1px solid black; /* Adiciona uma linha (borda inferior) */
+    padding-bottom: 5px; /* Opcional: adicione espaço entre o texto e a linha */
+}
+
+.btn-social a {
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    color: black;
+    border: 1.6px solid black;
+    font-size: 15px;
+    border-radius: 50%;
+    padding: 6.24px;
+    text-align: center;
+}
+
+.btn-social a:hover {
+    color: white;
+    background-color: black;
+    box-shadow: 0 0 20px black;
+    transition: all .3s ease-in-out;
 }
 
 /* Definindo os estilos de fundo com base na situação da média */
