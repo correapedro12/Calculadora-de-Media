@@ -9,7 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background: linear-gradient(338deg, #c4f0f0 35%, #7fe1e1 35%, #7fe1e1 65%, #c4f0f0 65%);
     height: 100vh;
 }
@@ -22,8 +22,8 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
     padding: 20px;
     text-align: center;
-    max-width: 400px;
-    max-height: 400px;
+    /* max-width: 400px;
+    max-height: 400px; */
 }
 
 /* Estilos para o cabeçalho da calculadora */
