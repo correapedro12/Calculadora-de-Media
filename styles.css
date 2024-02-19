@@ -160,3 +160,9 @@ a {
 .prova-final {
     background: linear-gradient(338deg, #ffffcc 35%, #ffff66 35%, #ffff66 65%, #ffffcc 65%);
 }
+
+@media screen and (max-width: 1020px){
+    .calculadora{
+        max-height: 500px;
+    }
+}
